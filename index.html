@@ -8,9 +8,14 @@
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; color: white;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -91,19 +96,20 @@
       </div>
       <div class="mid-section__details">
         <h2 class="mid-section__title">Stay productive, wherever you are</h2>
-        <p class="mid-section__desc">
-          Never let location be an issue when accessing your files. Fylo has you covered for all of your file
-          storage needs.
+        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+          storage needs.</br>
           Securely share files and folders with friends, family and colleagues for live collaboration. No email
-          attachments required.
-        </p>
+          attachments required.</p>
+        <div class="mid-section__btn">
+          <a href="#">See how Fylo works<img src="./images/icon-arrow.svg" alt=""></a>
+          <span class="underline"></span>
+        </div>
       </div>
-      <div class="mid-section__btn">
-        <a href="#">See how Fylo works <span><img src="./images/icon-arrow.svg" alt=""></span></a>
-      </div>
+      
     </section>
     <section class="testimonials">
-      <div class="testimonial__container">
+      <img src="./images/bg-quotes.png" alt="" class="quote">
+      <div class="testimonial__container box--one">
         <blockquote class="testimonial__quote">
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.
@@ -118,7 +124,7 @@
         </div>
         </div>
       </div>
-      <div class="testimonial__container">
+      <div class="testimonial__container box--two">
         <blockquote class="testimonial__quote">
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.
@@ -133,7 +139,7 @@
           </div>
         </div>
       </div>
-      <div class="testimonial__container">
+      <div class="testimonial__container box--three">
         <blockquote class="testimonial__quote">
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.
@@ -159,7 +165,7 @@
       </div>
       <form action="" class="form">
         <div class="form-row__input">
-          <input type="email" name="email" class="email">
+          <input type="email" name="email" class="email" placeholder="email@example.com">
         </div>
         <div class="form-row__btn">
           <button>Get Started For Free</button>
@@ -172,13 +178,12 @@
       <div class="logo">
         <img src="./images/logo.svg" alt="logo">
       </div>
-      <div class="location">
-        <img src="./images/icon-location.svg" alt="icon-location">
-        <span class="location__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua
-</span>
-      </div>
       <div class="contacts">
+        <div class="location">
+          <img src="./images/icon-location.svg" alt="icon-location">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua</p>
+        </div>
         <div class="phone">
           <img src="./images/icon-phone.svg" alt="icon-phone">
           <span class="phone-number">+1-543-123-4567</span>
@@ -201,10 +206,16 @@
           <li class="footer-link__item"><a href="" class="footer-link__link">Privacy</a></li>
         </ul>
       </div>
+      <div class="social-media">
+        <a href="social-media__links"><i class="fab fa-facebook"></i></a>
+        <a href="social-media__links"><i class="fab fa-twitter"></i></a>
+        <a href="social-media__links"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
     </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>
+      Coded by <a href="https://github.com/daudi13">David Ouma</a>
     </p>
   </footer>
 </body>
